@@ -1,0 +1,219 @@
+/* Estilos para el contenedor principal */
+#principal {
+    background-color: #0475B3;
+    padding: 10px;
+    margin: 30px 30px 0 30px; /* Centrado automático */
+    border-radius: 20px;
+    font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+    font-size: 5vw; /* Usar vw para mejor escalabilidad */
+    text-align: center;
+    color: #F5F5F5;
+    z-index: 1;
+
+}
+
+.principal{
+
+    padding: 10px;
+    margin: 30px 30px 0 30px; /* Centrado automático */
+    font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+    font-size: 5vw; /* Usar vw para mejor escalabilidad */
+    
+}
+
+/* Estilos para el logo */
+#logo {
+    width: 100px;
+}
+
+nav {
+    background-color: #098DD6;
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+    font-size: 2.5rem; /* Usar rem para mejor escalabilidad */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 10%;
+    top: 22%; /* Ajustar este valor para acercar el nav al header */
+    vertical-align: middle;
+    align-items: center;
+    justify-items: auto;
+    text-align: center;
+}
+
+nav a { /* Suponiendo que los elementos de navegación son enlaces */
+    color: #FFEC89 !important;
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+    vertical-align: middle;
+    
+}
+
+/* Estilos para la sección */
+
+section {
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    margin: 0; /* Eliminar márgenes para evitar desplazamientos */
+    padding: 50px;
+    max-width: 80%;
+    width: 50% ;/* Cambiado a max-width para ser más responsivo */
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    position: relative; /* Cambiar a posición relativa */
+    margin: 60px auto; /* Centrar la sección verticalmente */
+}
+
+.content {
+    align-items: center; /* Centrar verticalmente el contenido */
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.about-image {
+    border-radius: 20px;
+    max-width: 50%; /* Cambiar a 100% para ser responsivo */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-left: 5%; /* Espacio entre el texto y la imagen */
+    width: 40%;
+}
+
+.contact-button {
+
+    background-color: #FFEC89; /* Color de fondo amarillo */
+    color: #0475B3; /* Color del texto azul */
+    width: 100%; /* Ancho del botón al 100% */
+    max-width: 236px; /* Ancho máximo del botón */
+    height: 59px; /* Altura del botón */
+    border: none;
+    border-radius: 20px; /* Bordes redondeados (opcional) */
+    font-size: 1.5rem; /* Tamaño de la fuente (ajusta según sea necesario) */
+    margin-top: 3%;
+    margin-left: 7%;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.contact-button:hover {
+    background-color: #FFEC89; /* Color de fondo al pasar el ratón (opcional) */
+}
+
+p {
+    font-family: 'Lato', sans-serif; /* Aplicar la fuente Lato */
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px; /* Tamaño de la fuente */
+    color: #0475B3; /* Color del texto */
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .about-image {
+        width: 90%; /* Aumentar el ancho de la imagen en pantallas pequeñas */
+        margin-left: 0; /* Eliminar margen izquierdo */
+    }
+
+    h2 {
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 18px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    #principal {
+        font-size: 4vw; /* Ajustar tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    nav {
+        font-size: 2rem; /* Reducir tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .contact-button {
+        font-size: 1.2rem; /* Ajustar tamaño de fuente del botón */
+    }
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif; /* Aplicar la fuente Archivo Black */
+    color: #0475B3 !important; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    font-size: 40px !important;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #0475B3;
+    position: relative; /* Cambiar a posición relativa */
+    margin: 20px auto; /* Centrar el footer */
+    border-radius: 20px;
+    width: 90%;
+    padding: 20px;}
+
+section.imagen1,section.imagen2,section.imagen3{
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    margin: 0; /* Eliminar márgenes para evitar desplazamientos */
+    padding: auto;
+    max-width: auto;
+    width: 20% ;/* Cambiado a max-width para ser más responsivo */
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    margin: 60px auto; /* Centrar la sección verticalmente */
+}
+
+.productos{
+
+    display: flex;
+    flex-direction: row;
+}
+
+img.bebidas{
+
+border-radius: 20px;
+width: 90%;
+height: 90%;
+
+}
+
+section.titulos{
+
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    margin: 0; /* Eliminar márgenes para evitar desplazamientos */
+    padding: auto;
+    max-width: auto;
+    width: 30% ;/* Cambiado a max-width para ser más responsivo */
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    position: relative; /* Cambiar a posición relativa */
+    margin: 60px auto; /* Centrar la sección verticalmente */
+
+}
+
+li{
+
+list-style: none;
+display: inline;
+
+
+}
+
+.foot{
+
+    background-color: #0475B3;
+    font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+    font-size: 2vw; /* Usar vw para mejor escalabilidad */
+    text-align: center;
+    color: #F5F5F5;
+}
